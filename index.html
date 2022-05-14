@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Arnab's Todo List</h1>
+    </header>
+    <form action="post">
+        <input type="text" class="todo-list">
+        <button class="todobtn" type="submit"><i class="fa-solid fa-plus"></i></button>
+        <select name="todos" class="filter-todo">
+            <option value="all">All</option>
+            <option value="completedtask">Completed Task</option>
+            <option value="unuompleted">Unuompleted Task</option>
+            <option value="deleted">Deleted Task</option> 
+        </select>
+    </form>
+    <div class="todoshowwrap">
+        <ul class="todo-ul-wrapper"></ul>
+    </div>
+
+    <script src="app.js" async defer></script>
+</body>
+
+</html>

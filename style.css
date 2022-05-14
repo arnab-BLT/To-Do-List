@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: brown;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    height: 100vh;
+}
+
+header h1 {
+    color: #fff;
+    height: 70px;
+}
+
+input {
+    padding: 10px 10px;
+}
+
+button {
+    padding: 10px 10px;
+    background-color: aqua;
+    border: none;
+    cursor: pointer;
+}
+
+ul.todo-ul-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.todo {
+    display: flex;
+    min-width: 230px;
+    margin: 10px auto;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffa500;
+    padding-left: 10px;
+}
+
+li.todoli {
+    min-width: 150px;
+    color: #ffffff;
+}
+
+ul button i {
+    pointer-events: none;
+}
+
+select.filter-todo {
+    padding: 10px;
+}
+
+.donetasked {
+    opacity: 0.5;
+}
+
+.donetasked li.todoli {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
